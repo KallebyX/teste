@@ -1,5 +1,4 @@
-import { booksDatabase } from '../database/database';
-import { Book } from '../interfaces/Book';
+import { Book, booksDatabase } from '../database/database';
 
 export const createBook = (bookData: Omit<Book, 'id' | 'createdAt' | 'updatedAt'>): Book => {
   const newBook: Book = {
